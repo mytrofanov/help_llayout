@@ -1,3 +1,11 @@
+h1 {
+    text-align: center;
+    font-family: Geometria;
+    font-size: 65px ;
+    margin: 2% 0 1% 0;
+    color: #363b5d
+}
+
 .personalData{
     background-color: white;
     width: 100%;

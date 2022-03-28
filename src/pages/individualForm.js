@@ -5,6 +5,7 @@ import Slide from '@mui/material/Slide';
 import CloseIcon from '@mui/icons-material/Close';
 import {createTheme, ThemeProvider} from "@mui/material";
 import s from '../styles/individualForm.module.css'
+import PersonToggleButton from "../components/toggleButton";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -61,7 +62,9 @@ export default function AlertDialogSlide() {
                         ml: '98%'
                     }}/>
                     <section className={s.personalData}>
-                        Hello! This is new text sldfjldsf lsdfj sldksfj sdfflkj
+                        <h1>Заповніть форму</h1>
+                        <PersonToggleButton/>
+
                     </section>
                 </Dialog>
             </ThemeProvider>
