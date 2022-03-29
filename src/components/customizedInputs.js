@@ -7,7 +7,7 @@ import FormControl from '@mui/material/FormControl';
 import s from '../styles/form.module.css'
 import Button from '@mui/material/Button';
 
-const BootstrapInput = styled(InputBase)(({theme}) => ({
+export const BootstrapInput = styled(InputBase)(({theme}) => ({
     'label + &': {
         marginTop: theme.spacing(2),
     },

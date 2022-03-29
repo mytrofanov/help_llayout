@@ -5,6 +5,11 @@ import mastercard from '../img/mastercard_icon.svg'
 import atm from '../img/atm.svg'
 import webmoney from '../img/webmoney.svg'
 import paypal from '../img/paypal.svg'
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Box from "@mui/material/Box";
+import {BootstrapInput} from "./customizedInputs";
+import CreditCardForm from "./creditCardForm";
 
 const PaymentMethods = () => {
     return (
@@ -58,6 +63,15 @@ const PaymentMethods = () => {
                 </div>
                 <div className={s.paymentMethodsRight}>
                     <div className={s.paymentMethodsHeader}>Введіть наступні дані:</div>
+                    <div className={s.creditCardForm}>
+                        <div className={s.cardNumber}>
+
+
+                                  <CreditCardForm/>
+                        </div>
+                        <div className={s.cardExpireDate}> 10/20 </div>
+                        <div className={s.cardCvvCode}> 123     </div>
+                    </div>
                 </div>
 
             </div>
