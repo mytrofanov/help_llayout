@@ -5,11 +5,58 @@ h1 {
     margin: 2% 0 1% 0;
     color: #363b5d
 }
-
+h3 {
+    text-align: center;
+    font-family: Geometria;
+    font-size: 22px ;
+    color: #363b5d
+}
+h5 {
+    text-align: center;
+    font-family: "Gilroy Light";
+    font-size: 18px ;
+    margin: 0 0 1% 0;
+    color: #363b5d
+}
 .personalData{
     background-color: white;
     width: 100%;
     height: 100vh;
     border-radius: 25px 25px 0 0;
 }
+ /*Hiding scrollbar:*/
+*{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 
+/*HelpType*/
+.helpTypeBlock{
+    background-color: white;
+}
+
+.helpTypeSelect {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.helpType {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 7%;
+    text-align: center;
+    vertical-align: center;
+    width: 8%;
+    height: 80px;
+}
+.helpTypeText {
+    position: relative;
+    top: -100%;
+    left: 110%;
+}
+.clothesImg {
+    margin-top: 10%;
+    width: 60%;
+}

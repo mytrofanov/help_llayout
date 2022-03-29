@@ -8,6 +8,7 @@ import s from '../styles/individualForm.module.css'
 import PersonToggleButton from "../components/toggleButton";
 import CustomizedInputs from "../components/customizedInputs";
 import {useState} from "react";
+import {HelpType} from "./helpType";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -57,6 +58,8 @@ export default function AlertDialogSlide() {
                             backgroundColor: 'transparent',
                             boxShadow: 'none',
                             width: '93,31756%',
+                            height: '5000px',
+                            marginBottom: '-2%'
                         },
                     }}
                 >
@@ -68,7 +71,7 @@ export default function AlertDialogSlide() {
                         <h1>Заповніть форму</h1>
                         <PersonToggleButton setPersonalData={setPersonalData}/>
                         <CustomizedInputs personalData={personalData}/>
-
+                        <HelpType personalData={personalData}/>
                     </section>
                 </Dialog>
             </ThemeProvider>
