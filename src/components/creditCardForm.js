@@ -1,26 +1,27 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import InputLabel from "@mui/material/InputLabel";
+import React from "react";
+import { useForm } from "react-hook-form";
 
 export default function CreditCardForm() {
-    return (
-        <Box
-            component="form"
-            sx={{
-                '& > :not(style)': { m: 1, width: '80px' },
-            }}
-            noValidate
-            autoComplete="off"
-        >
-            <InputLabel shrink htmlFor="Номер картки">
-                Номер картки
-            </InputLabel>
-            <TextField id="outlined-basic"   variant="outlined" />
-            <TextField id="outlined-basic"   variant="outlined" />
-            <TextField id="outlined-basic"   variant="outlined" />
-            <TextField id="outlined-basic"   variant="outlined" />
+    const { register, handleSubmit } = useForm();
+    let cardNumber
+    let cardNumberAsNumber
+    const onSubmit = data => {
+        cardNumberAsNumber = Number(data.cardNumber_fourDigit + data.cardNumber_eightDigit + data.cardNumber_twelveDigit
+            +data.cardNumber_sixteenDigit)
+        cardNumber = data.cardNumber_fourDigit +'-'+ data.cardNumber_eightDigit +'-'+ data.cardNumber_twelveDigit
+            +'-'+data.cardNumber_sixteenDigit
+        console.log('CardNumber:',cardNumber)
+        console.log('CardNumber as number:',cardNumberAsNumber)
+    };
 
-        </Box>
+
+    return (
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <input type="text" maxLength={4} {...register("cardNumber_fourDigit", {pattern:/\d/i})}/>
+            <input type="text" maxLength={4} {...register("cardNumber_eightDigit", {pattern:/\d/i})}/>
+            <input type="text" maxLength={4} {...register("cardNumber_twelveDigit", {pattern:/\d/i})}/>
+            <input type="text" maxLength={4} {...register("cardNumber_sixteenDigit", {pattern:/\d/i})}/>
+            <input type="submit" />
+        </form>
     );
 }
