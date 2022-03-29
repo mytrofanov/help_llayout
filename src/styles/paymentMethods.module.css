@@ -6,7 +6,64 @@
 .paymentMethodSelect {
     margin: 0 auto;
     width: 90%;
-    height: 200px;
+    height: 300px;
     border: 3px solid #c5d5e6;
     border-radius: 25px;
+
+    display: flex;
+    flex-direction: row;
+}
+.paymentMethodsLeft {
+    width: 50%;
+}
+.paymentMethodsRight {
+    width: 50%;
+}
+.paymentMethodsHeader {
+    font-family: "Gilroy ExtraBold";
+    margin: 2% 0 0 2%;
+}
+.paymentMethodsPict{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 5px;
+}
+.creditCardPict {
+    width: 30%;
+    height: 100px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #9c5d9a;
+}
+.visa {
+    width: 40%;
+    margin-top: 10%;
+}
+.cardsLogo {
+    padding-left: 12%;
+}
+.terminalLogo{
+    margin: 5px 0 5px 15%;
+    height: 60px
+}
+.webmoneyLogo{
+    height: 80px;
+    margin-left: 15%;
+    margin-bottom: -5%;
+}
+
+.cardName {
+    font-family: "Gilroy Light";
+    text-align: center;
+    font-size: 12px;
+    color:white;
+}
+.privatLogo{
+    font-family: "Gilroy ExtraBold";
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 15% auto;
 }

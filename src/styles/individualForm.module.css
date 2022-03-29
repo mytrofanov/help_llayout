@@ -12,6 +12,13 @@ h3 {
     font-size: 22px;
     color: #363b5d
 }
+h4 {
+    text-align: center;
+    font-family: Geometria;
+    font-size: 18px;
+    color: #363b5d;
+    margin-bottom: 1px;
+}
 
 h5 {
     text-align: center;
