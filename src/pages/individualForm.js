@@ -6,6 +6,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import {createTheme, ThemeProvider} from "@mui/material";
 import s from '../styles/individualForm.module.css'
 import PersonToggleButton from "../components/toggleButton";
+import CustomizedInputs from "../components/customizedInputs";
+import {useState} from "react";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -24,7 +26,7 @@ const theme = createTheme({
 })
 export default function AlertDialogSlide() {
     const [openDialogSlide, setOpenDialogSlide] = React.useState(false);
-
+    let [personalData, setPersonalData] = useState(true)
     const handleClickOpen = () => {
         setOpenDialogSlide(true);
     };
@@ -32,6 +34,7 @@ export default function AlertDialogSlide() {
     const handleClose = () => {
         setOpenDialogSlide(false);
     };
+
 
     return (
         <div>
@@ -63,7 +66,8 @@ export default function AlertDialogSlide() {
                     }}/>
                     <section className={s.personalData}>
                         <h1>Заповніть форму</h1>
-                        <PersonToggleButton/>
+                        <PersonToggleButton setPersonalData={setPersonalData}/>
+                        <CustomizedInputs personalData={personalData}/>
 
                     </section>
                 </Dialog>

@@ -1,0 +1,21 @@
+form {
+    width: 80%;
+    margin: 0 auto;
+    height: 50%;
+    font-family: Geometria;
+}
+.personalInfo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.leftBlock {
+    width: 40%;
+}
+.centredBlock{
+    width: 20%;
+}
+.rightBlock {
+    width: 40%;
+}
