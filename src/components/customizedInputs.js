@@ -45,15 +45,14 @@ const BootstrapInput = styled(InputBase)(({theme}) => ({
 }));
 
 
-export default function CustomizedInputs({personalData}) {
+export default function CustomizedInputs() {
 
     return (
         <div className={s.personalInfo}>
             <div className={s.leftBlock}>
-                {personalData ?
                     <div>
                         <Box
-                            component="form"
+                            component="div"
                             noValidate
                             sx={{
                                 width: '90%',
@@ -79,7 +78,7 @@ export default function CustomizedInputs({personalData}) {
                         </Box>
                         <div>
                             <Box
-                                component="form"
+                                component="div"
                                 noValidate
                                 sx={{
                                     width: '90%',
@@ -139,19 +138,16 @@ export default function CustomizedInputs({personalData}) {
                             </Box>
                         </div>
                     </div>
-                    : null
-                }
 
             </div>
             <div className={s.centredBlock}>
 
             </div>
             <div className={s.rightBlock}>
-                {personalData ?
                     <div>
                          <div>
                             <Box
-                                component="form"
+                                component="div"
                                 noValidate
                                 sx={{
                                     width: '90%',
@@ -171,7 +167,7 @@ export default function CustomizedInputs({personalData}) {
                                     <BootstrapInput fullWidth={true} defaultValue=" " id="country"/>
                                 </FormControl>
                                 <Box
-                                    component="form"
+                                    component="div"
                                     noValidate
                                     sx={{
                                         width: '100%',
@@ -218,8 +214,6 @@ export default function CustomizedInputs({personalData}) {
                             </Box>
                         </div>
                     </div>
-                    : null
-                }
             </div>
         </div>
     );

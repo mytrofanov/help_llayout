@@ -9,6 +9,7 @@ import PersonToggleButton from "../components/toggleButton";
 import CustomizedInputs from "../components/customizedInputs";
 import {useState} from "react";
 import {HelpType} from "./helpType";
+import PaymentMethods from "../components/paymentMethods";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -70,8 +71,14 @@ export default function AlertDialogSlide() {
                     <section className={s.personalData}>
                         <h1>Заповніть форму</h1>
                         <PersonToggleButton setPersonalData={setPersonalData}/>
-                        <CustomizedInputs personalData={personalData}/>
-                        <HelpType personalData={personalData}/>
+                        {personalData ?
+                            <>
+                                <CustomizedInputs personalData={personalData}/>
+                                <HelpType />
+                                <PaymentMethods/>
+                            </>
+                            : null}
+
                     </section>
                 </Dialog>
             </ThemeProvider>
