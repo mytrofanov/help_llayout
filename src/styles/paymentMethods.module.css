@@ -43,6 +43,15 @@
     margin: 5px;
     border-radius: 15px;
     background-color: #9c5d9a;
+    opacity: 0.5;
+}
+.creditCardPictActive{
+    width: 30%;
+    height: 100px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #9c5d9a;
+    opacity: 1;
 }
 .visa {
     width: 40%;

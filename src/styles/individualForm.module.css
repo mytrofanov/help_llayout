@@ -1,23 +1,28 @@
+:root {
+    --main-h-font-family: Geometria;
+    --main-h-color: #363b5d
+}
+
 h1 {
     text-align: center;
-    font-family: Geometria;
+    font-family: var(--main-h-font-family);
     font-size: 65px;
     margin: 2% 0 1% 0;
-    color: #363b5d
+    color: var(--main-h-color)
 }
 
 h3 {
     text-align: center;
-    font-family: Geometria;
+    font-family:  var(--main-h-font-family);;
     font-size: 22px;
-    color: #363b5d
+    color: var(--main-h-color)
 }
 h4 {
     text-align: center;
-    font-family: Geometria;
+    font-family:  var(--main-h-font-family);;
     font-size: 18px;
-    color: #363b5d;
-    margin-bottom: 1px;
+    color: var(--main-h-color);
+    margin-bottom: 2px;
 }
 
 h5 {
@@ -25,7 +30,7 @@ h5 {
     font-family: "Gilroy Light";
     font-size: 18px;
     margin: 0 0 1% 0;
-    color: #363b5d
+    color: var(--main-h-color)
 }
 
 .personalData {
@@ -56,7 +61,7 @@ h5 {
 }
 
 .helpType {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     margin: 0 7%;
     text-align: center;
@@ -71,6 +76,32 @@ h5 {
     opacity: 1;
     transition: opacity 0.2s ease;
 }
+
+.helpTypeActive {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 7%;
+    text-align: center;
+    vertical-align: center;
+    width: 8%;
+    height: 80px;
+    background-color: #9c5d9a;
+    opacity: 1;
+}
+.tabSelectActive {
+    position: relative;
+    top: 27px;
+    left: -80px;
+    border-top: 3px solid #c5d5e6;
+    border-left: 3px solid #c5d5e6;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: white;
+    transform: rotate(45deg);
+    opacity: 1;
+}
+
 .helpType:hover ,
 .helpType:hover  .tabSelect,
 .tabSelect:hover,

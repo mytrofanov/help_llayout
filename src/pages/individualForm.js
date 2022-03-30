@@ -26,10 +26,13 @@ const theme = createTheme({
     },
 
 })
+
 export default function AlertDialogSlide() {
     const [openDialogSlide, setOpenDialogSlide] = React.useState(false);
     let [personalData, setPersonalData] = useState(true)
     let [helpType, setHelpType ] = useState('')
+    let [payMethod, setPayMethod ] = useState('')
+
     const handleClickOpen = () => {
         setOpenDialogSlide(true);
     };
@@ -39,6 +42,7 @@ export default function AlertDialogSlide() {
     };
 
     console.log(helpType)
+    console.log(payMethod)
     return (
         <div>
             {openDialogSlide ? null :
@@ -75,8 +79,8 @@ export default function AlertDialogSlide() {
                         {personalData ?
                             <>
                                 <CustomizedInputs personalData={personalData}/>
-                                <HelpType setHelpType={setHelpType}/>
-                                <PaymentMethods/>
+                                <HelpType setHelpType={setHelpType} helpType={helpType} />
+                                <PaymentMethods helpType={helpType} setPayMethod={setPayMethod} payMethod={payMethod}/>
                             </>
                             : null}
 
