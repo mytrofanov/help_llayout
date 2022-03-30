@@ -19,13 +19,6 @@
 .paymentMethodsRight {
     width: 50%;
 }
-.creditCardForm{
-    width: 90%;
-    height: 200px;
-    background-color: #9c5d9a;
-    border-radius: 25px;
-    margin-top: 2%;
-}
 
 .paymentMethodsHeader {
     font-family: "Gilroy ExtraBold";

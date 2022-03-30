@@ -1,19 +1,93 @@
+.creditCardForm {
+    width: 64%;
+    height: 190px;
+    background-color: #9c5d9a;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.cardDataBlock {
+    padding: 1%;
+}
+
 .cardNumberBlock {
-    width: 90%;
-    padding-top: 1%;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
+
 .cardNumber {
-    width: 25%;
-    padding: 1%;
-    margin: 1%;
+    width: 24%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 2%;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.cardLabel {
+    padding: 3% 0 3% 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardExpLabel {
+    width: 80%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardCvvLabel {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dateAndCvvBlock {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.cardExp {
+    display: flex;
+    flex-direction: row;
+}
+
+.expire {
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
-.cardLabel {
+
+.expDevider {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 1%;
+}
+
+.cvv {
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 75%;
+    text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    font-weight: bold;
 }
