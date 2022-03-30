@@ -70,7 +70,7 @@ export default function CreditCardForm() {
                     </div>
 
                     <Button
-                        variant="contained" color="secondary" size={"small"}
+                        variant="contained" color="secondary" size={"large"} className={s.helpButton}
                         id={"submit_card_info"}
                         type="submit">Допомогти</Button>
                 </div>

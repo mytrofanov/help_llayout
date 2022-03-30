@@ -91,3 +91,8 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
+.helpButton{
+    position: relative;
+    right: 60%;
+    top: 150px;
+}
