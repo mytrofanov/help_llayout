@@ -133,7 +133,7 @@ export default function CustomizedInputs() {
                                     <InputLabel shrink htmlFor="Номер телефону">
                                         Номер телефону
                                     </InputLabel>
-                                    <BootstrapInput defaultValue=" " id="phone"/>
+                                    <BootstrapInput defaultValue=" " id="phone_number"/>
                                 </FormControl>
                             </Box>
                         </div>
@@ -209,7 +209,7 @@ export default function CustomizedInputs() {
                                     <InputLabel shrink htmlFor="Поштовий індекс">
                                         Поштовий індекс
                                     </InputLabel>
-                                    <BootstrapInput defaultValue=" " id="phone"/>
+                                    <BootstrapInput defaultValue=" " id="post_index"/>
                                 </FormControl>
                             </Box>
                         </div>
