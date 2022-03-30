@@ -1,3 +1,8 @@
+:root {
+    --main-card-font-family: 'Roboto Mono', monospace;
+    --main-label-font-size: 16px;
+}
+
 .creditCardForm {
     width: 64%;
     height: 190px;
@@ -23,7 +28,7 @@
     border: 0;
     margin-right: 2%;
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--main-card-font-family);
     font-size: 18px;
 }
 
@@ -35,21 +40,21 @@
 
 .cardLabel {
     padding: 3% 0 3% 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-family: var(--main-card-font-family);
+    font-size: var(--main-label-font-size);
     font-weight: bold;
 }
 
 .cardExpLabel {
     width: 80%;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-family: var(--main-card-font-family);
+    font-size: var(--main-label-font-size);
     font-weight: bold;
 }
 
 .cardCvvLabel {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-family: var(--main-card-font-family);
+    font-size: var(--main-label-font-size);
     font-weight: bold;
 }
 
@@ -70,12 +75,12 @@
     border-radius: 5px;
     border: 0;
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-family: var(--main-card-font-family);
+    font-size: var(--main-label-font-size);
 }
 
 .expDevider {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--main-card-font-family);
     font-size: 25px;
     font-weight: bold;
     padding: 0 1%;
@@ -88,7 +93,7 @@
     border: 0;
     margin-left: 75%;
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--main-card-font-family);
     font-size: 16px;
 }
 .helpButton{
